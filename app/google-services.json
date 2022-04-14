@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "173186648618",
+    "firebase_url": "https://referme-3ec9a.firebaseio.com",
+    "project_id": "referme-3ec9a",
+    "storage_bucket": "referme-3ec9a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:173186648618:android:03addabbfe7ab4f4095153",
+        "android_client_info": {
+          "package_name": "com.kamikaze.referme"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "173186648618-l1sbt7q5moca0ee9hvpd152obj5mms9g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC1vCh5S4lOGNFelNrmsLzaCG9pNDNJkiU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "173186648618-l1sbt7q5moca0ee9hvpd152obj5mms9g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

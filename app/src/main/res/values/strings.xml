@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">ReferMe</string>
+    <string name="register"><u>Don\'t have an account? Register!</u></string>
+    <string name="about"><b>ReferMe,
+        powered by KamikazeStudios.
+        , Easy to understand.
+        All you need to do is refer two or more users to join the train of income earners. Evidently, The value of the ReferMe train is the User base.
+        The more you refer, the more you earn. Register with just $20 dollars and on each of your downlines, you get and impressive 50% ROI.</b></string>
+    <string name="about1"><b>
+     There is minimum risk of losing income as earnings on each downline are received on the point of registration.
+    So what are you waiting for? get someone to join the train and let\'s earn</b></string>
+    <string name="resend"><u>resend code</u></string>
+    <string name="info"><i>a code has been sent to your email. Log on to your email to complete process</i></string>
+
+</resources>

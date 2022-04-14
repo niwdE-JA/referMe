@@ -1,0 +1,20 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/baselineColor</item>
+        <item name="android:windowTranslucentStatus">true</item>
+    </style>
+
+    <style name="greenText" parent="Widget.AppCompat.EditText">
+        <item name="android:colorControlActivated">#0BEE0B</item>
+    </style>
+
+    <style name="toolbarFont">
+        <item name="android:fontFamily">@font/poiret</item>
+    </style>
+
+</resources>

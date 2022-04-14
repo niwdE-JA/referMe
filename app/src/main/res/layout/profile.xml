@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#cccccc">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/layotp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#3899a7"
+        android:fitsSystemWindows="true"
+        app:layout_constraintTop_toTopOf="parent">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/otpToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:layout_collapseMode="pin">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#3899a7"
+                android:gravity="center"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:fontFamily="@font/poiret"
+                    android:text="Forgot Password"
+                    android:textColor="@color/colorWhiteSolid"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:elevation="10dp"
+        android:background="@drawable/holopill"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layotp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#3899a7"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/bar2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/medium_padding"
+                android:fontFamily="@font/poiret"
+                android:text="OTP Verification"
+                android:textColor="@color/colorWhiteSolid"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="5dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poiret"
+                android:text="A code has been sent to "
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/numb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poiret"
+                android:text="example number"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/otplay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:padding="10dp" >
+
+            <EditText
+                android:id="@+id/otpb1"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginEnd="5dp"
+                android:background="@drawable/editedcursor"
+                android:gravity="center"
+                android:inputType="number"
+                android:fontFamily="@font/poiret"
+                android:maxLength="1"
+                android:textSize="30sp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/otpb2"/>
+
+            <EditText
+                android:id="@+id/otpb2"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginEnd="5dp"
+                android:background="@drawable/editedcursor"
+                android:gravity="center"
+                android:inputType="number"
+                android:fontFamily="@font/poiret"
+                android:maxLength="1"
+                android:textSize="30sp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toEndOf="@id/otpb1"
+                app:layout_constraintEnd_toStartOf="@id/otpb3"/>
+
+            <EditText
+                android:id="@+id/otpb3"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginEnd="5dp"
+                android:background="@drawable/editedcursor"
+                android:gravity="center"
+                android:inputType="number"
+                android:fontFamily="@font/poiret"
+                android:maxLength="1"
+                android:textSize="30sp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toEndOf="@id/otpb2"
+                app:layout_constraintEnd_toStartOf="@id/otpb4" />
+
+            <EditText
+                android:id="@+id/otpb4"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginEnd="5dp"
+                android:background="@drawable/editedcursor"
+                android:gravity="center"
+                android:inputType="number"
+                android:fontFamily="@font/poiret"
+                android:maxLength="1"
+                android:textSize="30sp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toEndOf="@id/otpb3"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/otplay"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="@dimen/medium_padding"
+            android:layout_marginBottom="10dp">
+
+            <Button
+                android:id="@+id/otpbttn"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/border"
+                android:fontFamily="@font/poiret"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:text="Verify"
+                android:textStyle="bold"
+                android:textColor="#3899a7"
+                android:textSize="20sp" />
+        </RelativeLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/resend"
+            android:textColor="#3899a7"
+            android:layout_marginStart="10sp"
+            android:layout_marginBottom="20dp"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:fontFamily="@font/poiret"/>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#cccccc">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/myActivityAppBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#3899a7"
+        android:fitsSystemWindows="true"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/myActivityToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:layout_collapseMode="pin">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#3899a7"
+                android:gravity="center"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:text="My Activity"
+                    android:textSize="20dp"
+                    android:textColor="@color/colorWhiteSolid"
+                    android:fontFamily="@font/poiret"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+
+
+    <ScrollView
+        android:id="@+id/scrl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/myActivityAppBar">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/inscrl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/Layout1"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_margin="5dp"
+        app:layout_constraintTop_toTopOf="@+id/inscrl">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/ActLay0"
+            android:clickable="true"
+            android:onClick="accountInfo"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@drawable/holopill"
+            android:elevation="10dp"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toTopOf="@id/Layout1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <LinearLayout
+                android:id="@+id/inlay01"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/accountinfo"
+                    android:layout_margin="10dp"
+                    android:layout_gravity="center"
+                    android:clickable="false"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                app:layout_constraintStart_toEndOf="@id/inlay01">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/medium_padding"
+                    android:layout_marginLeft="@dimen/medium_padding"
+                    android:fontFamily="@font/vonique"
+                    android:text="Account info"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:clickable="false"/>
+                <TextView
+                    android:id="@+id/acnTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/medium_padding"
+                    android:fontFamily="@font/poiret"
+                    android:text="Account@example.email.com"
+                    android:textSize="15sp"
+                    android:clickable="false"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/inlay03"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                app:layout_constraintEnd_toEndOf="parent">
+
+                <ImageView
+                    android:id="@+id/arrow1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/arrowright"
+                    android:layout_margin="@dimen/medium_padding"/>
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/Layout2"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_margin="5dp"
+        app:layout_constraintTop_toBottomOf="@+id/Layout1">
+
+   <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/ActLay1"
+        android:clickable="true"
+        android:onClick="downlines"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:background="@drawable/holopill"
+        android:elevation="10dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/inlay11"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:layout_constraintStart_toStartOf="parent">
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/downlines"
+                android:layout_margin="10dp"
+                android:layout_gravity="center"
+                android:clickable="false"/>
+        </LinearLayout>
+
+       <LinearLayout
+           android:layout_width="wrap_content"
+           android:layout_height="match_parent"
+           android:orientation="vertical"
+           app:layout_constraintStart_toEndOf="@id/inlay11"
+           app:layout_constraintTop_toTopOf="parent">
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="16dp"
+               android:layout_marginTop="@dimen/medium_padding"
+               android:clickable="false"
+               android:fontFamily="@font/vonique"
+               android:text="Downlines"
+               android:textSize="12sp"
+               android:textStyle="bold" />
+
+           <TextView
+               android:id="@+id/RefTxt"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="@dimen/medium_padding"
+               android:clickable="false"
+               android:fontFamily="@font/poiret"
+               android:text="ref No : abcde123"
+               android:textSize="15sp" />
+       </LinearLayout>
+        <LinearLayout
+            android:id="@+id/inlay13"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            app:layout_constraintEnd_toEndOf="parent">
+            <ImageView
+                android:id="@+id/arrow2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/arrowright"
+                android:layout_margin="@dimen/medium_padding"/>
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+       <androidx.constraintlayout.widget.ConstraintLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:background="#aaffffff"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintTop_toBottomOf="@id/ActLay1">
+
+
+       </androidx.constraintlayout.widget.ConstraintLayout>
+
+   </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/ActLay2"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:layout_margin="5dp"
+        android:background="@drawable/holopill"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Layout2">
+
+        <LinearLayout
+            android:id="@+id/inlay21"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:layout_constraintStart_toStartOf="parent">
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/logout"
+                android:layout_margin="10dp"
+                android:layout_gravity="center"
+                android:clickable="false"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:onClick="logout"
+            app:layout_constraintStart_toEndOf="@id/inlay21">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/medium_padding"
+                android:fontFamily="@font/vonique"
+                android:text="logout"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:clickable="false"/>
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
+
